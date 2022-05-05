@@ -1,0 +1,3 @@
+[console_scripts]
+LAB = LAB.__main__:main
+
