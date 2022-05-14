@@ -1,0 +1,11 @@
+###### Requirements without Version Specifiers ######
+
+click
+datetime
+pyfiglet
+progressbar
+colorama
+time
+subprocess
+
+###### Requirements with Version Specifiers ######
