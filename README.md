@@ -1,21 +1,28 @@
-# Witch-Attack
+# Witchattack
 
-Witch-Attack is a Linux tool for testing Different network attacks, we used Docker for prepare lab of each attack and python for combine all file together. 
+Witchattack is a Linux tool for testing different network attacks, we used Docker and Python to build it 
 
-## Modules Installation  
+## Modules Installation 
 
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install python modules : 
+Use the package manager [pip](https://pip.pypa.io/en/stable/) and requirements.txt file to install python modules.
 
 ```bash
-sudo pip3 install <Module_Name>
+pip install -r requirements.txt 
 ```
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Witch-Attack .
+Before the instalation of witchattack tool, you must install dockerfile images, so run this python script  ' Install_Docker_file.py ' in main folder :
 
-- Go to  LAB Folder and run ( . is in the command )
+- Go to LAB Folder and run 
+
+```bash
+sudo Python3 Install_Docker_file.py
+```
+
+now, you can Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Wtichattack .
+
+- Go to LAB Folder and run ( . is in the command )
 
 ```bash
 sudo pip3 install -e .
@@ -24,7 +31,13 @@ sudo pip3 install -e .
 ## Usage
 
 ```bash
-LAB --name ATTACK_NAME
+LAB --name <ATTACK_NAME>
+```
+
+OR Just type LAB and will get a list of available attacks :
+
+```bash
+LAB 
 ```
 
 For more info :
@@ -34,5 +47,5 @@ LAB --help
 ## Uninstall 
 
 ```bash
-sudo pip3 uninstall infoget
+sudo pip3 uninstall LAB
 ```
